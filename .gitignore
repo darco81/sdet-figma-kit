@@ -1,0 +1,23 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# secrets & env
+.env
+.env.*
+!.env.example
+
+# local artifacts (selective staging — never commit working scratch)
+out/
+tmp/
+*.log
+brief/
+traces/
+screenshots/
+figma-cache/
+*.local.*
+
+# OS
+.DS_Store

@@ -1,0 +1,52 @@
+{
+  "name": "sdet-figma-kit",
+  "version": "0.1.0",
+  "description": "Deterministic Figma-to-code: extract design tokens, map to generic CSS/Tailwind, generate component skeletons. RULE ZERO — absent in the design means absent in the code, never guessed.",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "author": "Dariusz Kowalski",
+  "homepage": "https://github.com/darco81/sdet-figma-kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darco81/sdet-figma-kit.git"
+  },
+  "keywords": [
+    "figma",
+    "design-tokens",
+    "figma-to-code",
+    "codegen",
+    "css",
+    "vue",
+    "react",
+    "design-to-code"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "sdet-figma-kit": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README.pl.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
